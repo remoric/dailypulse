@@ -2697,6 +2697,12 @@
             if (!o || !Array.isArray(o.w) || o.w.length !== 7) return null;
             return decodeCard(encodeCard({ v: 1, n: o.n, s: o.s, b: o.b, x: o.x, w: o.w, d: o.d }));
         }
+    
     </script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
 </body>
 </html>
